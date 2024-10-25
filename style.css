@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 100vh;
+    background: linear-gradient( to right,#0553c9,#3587ba);
+    
+}
+.navigation{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    padding: 10px 10px 10px 10px;
+}
+ .logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+
+}
+
+.logo{
+   display: flex;
+    
+}
+.logo h2{
+    font-size: 30px;
+}
+.logo h2 span{
+    color: #0553c9;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    
+}
+ul li{
+    padding: 10px 10px 10px 10px;
+    
+}
+
+ ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 10px 10px 10px ;
+    border-radius: 30px;
+    display: block;
+   
+}
+ul li a:hover{
+    background-color: #0c54bf;
+}
+ul li a:hover:active{
+    background-color: #0553c9;
+}
+.heading h2{
+    padding:10px;
+}
+
+.btn{
+    border: 1px solid white;
+    border-radius: 20px;
+    
+    border-width: 1px;
+}
+.hamburger{
+    display:  none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.hamburger:hover{
+    background-color: #f6f4ff;
+}
+.hem{
+    width: 30px;
+    height: 2px;
+    margin:6px 0px ;
+    background-color: #212526;
+}
+@media only screen and (max-width: 1100px) {
+    .navigation{
+        width: 90%;
+        padding: 0px 20px;
+    }
+    nav{
+        position: absolute;
+        left: -300px;
+        top: 0;
+        z-index: 999;
+        width: 280px;
+        height: 100vh;
+        background-color:#fefefe;
+        transition: 0.2s; 
+        box-shadow: 2px 0 20px 0 rgba(0,0,0,0.05);
+
+    }
+    #nav_check:checked ~ nav{
+        left: 0px;
+    }
+    nav.logo{
+        display: block;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+    
+    ul{
+        display: block;
+        
+    }
+    ul li a{
+        margin-bottom: 5px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: black;
+    }
+    .hamburger{
+        display: block;
+    }
+    
+
+}
+header{
+    width: 100%;
+    height: 600px;
+    background-image: url(standard-quality-control-collage-concept.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+    animation: slide 9s linear infinite;
+    display: block;
+
+}
+@keyframes slide {
+    0%{
+        background-image: url(standard-quality-control-collage-concept.jpg);
+    }
+    50%{
+        background-image:url(futuristic-blue-cloud-with-pixel-digital-transformation.jpg) ;
+    }
+    100%{
+        background-image: url(businessman-touching-brain-working-artificial-intelligence.jpg);
+    }
+    
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    background-color:rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: 0.6s;
+
+}
+.content:hover{
+    opacity: 1;
+}
+.title2{
+
+    max-width: 310px;
+    margin-left: -90px;
+    margin-top: -10px;
+}
+.title2 h1{
+    color: #0c54bf;
+    font-size:40px;
+    font-weight: bold;
+}
+.title2 p{
+    color: white;
+    margin-top: 10px;
+    font-size: large;
+    line-height: 20px; 
+    letter-spacing: 1px;   
+}
+
+
+.title2_image img{
+    height: 400px;
+    width: 400px;
+}
+
+.title2 a{
+   
+    text-decoration: none;
+    color: white;
+    border: 1px solid #0c54bf;
+    padding: 10px 20px 10px 20px;
+    margin-right:10px ;
+    border-radius: 10px;
+}
+#btn1{
+    background-color:#0c54bf;
+}
+.main_section {
+    height: 400vh;
+    width: 100%;
+    background-image: url(network.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+   
+.middlecontent{
+                
+                color: #0c54bf;
+                text-align: center;
+                padding-top: 40px;
+                
+            
+}
+.middlecontent h1{
+    font-size: 40px;
+    font-weight: 800;
+    padding: 10px 10px 10px 10px;
+}
+.middlecontent  h2{
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding: 20px 20px 20px 20px;
+}
+.middlecontent p{
+    max-width: 500px;
+    margin-left: 400px;
+    line-height: 22px;
+    font-size: 19px;
+    letter-spacing: 1px;
+    
+}
+.left_section{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+   
+}
+.left_content{
+   
+    padding: 10px 10px 10px 10px;
+}
+.left_content h1{
+    color: #0c54bf;
+}
+.big{
+    font-size: 60px;
+    font-weight: 700;
+}
+.left_content p{
+    margin-top: 10px;
+    max-width: 400px;
+    color: white;
+    font-size: 20px;
+}
+.left_content ul{
+    color: white;
+}
+.img_container img{
+    width: 400px ;
+    height: 400px;
+}
+#heading2{
+    font-size: 22px;
+}
+.left_content ul li span{
+    color: red;
+
+}
+.right_section{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.right_content{
+   
+    padding: 10px 10px 10px 10px;
+}
+.right_content h1{
+    color: #0c54bf;
+}
+.big{
+    font-size: 60px;
+    font-weight: 700;
+}
+.right_content p{
+    margin-top: 10px;
+    max-width: 400px;
+    color: white;
+    font-size: 20px;
+}
+.right_content ul{
+    color: white;
+}
+.right_section  .img_container img{
+    width: 500px;
+    height: 500px;
+}
+.left_content.img_container img{
+    width: 400px ;
+    height: 400px;
+}
+.team_section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.team_section h1{
+    color: #0c54bf;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 10px 10px 10px;
+    font-size: 50px;
+    font-weight: 600;
+}
+.profile_card
+{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+}
+.profile_card:hover{
+    border-radius: 10px;
+    height: 280px;
+}
+
+
+.profile_img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+}
+.profile_card:hover .profile_img{
+    transform: translateY(-90px);
+}
+
+.profile_img img{
+    width: 100%;
+    border-radius:50% ;
+    box-shadow: 0 0 22px #3336;
+}
+.caption{
+    text-align: center;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: .6s;
+}
+.profile_card:hover .caption{
+    opacity: 1;;
+}
+
+.caption p{
+    font-size: 17px;
+    color: #0c54bf;
+    margin: 2px 0 6px 0;
+}
+.caption h3{
+    font-size: 21px;
+    
+}
+.caption .social_media a{
+    color: #333;
+    margin-right: 8px;
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+}
+.caption .social_media a:hover{
+    color: #0c54bf;
+    font-size: 21px;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+.section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-around;
+    background:linear-gradient(to right,#238ee6,#9EDDFF,#1303f0);
+    background-size: cover;
+    background-position: center center;
+
+
+}
+.section h2{
+    color: white;
+    font-size: 100px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.section1{
+    background-image: url(hyberdad.jpg);
+}
+.section2{
+    background-image: url(delhi.jpg);
+}
+.section3{
+    background-image: url(DS_Gradovi.webp);
+}
